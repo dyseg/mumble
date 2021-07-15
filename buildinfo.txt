@@ -1,0 +1,4 @@
+x64 native tools command prompt
+cd C:\users\lajos\mumble\build
+cmake -G "NMake Makefiles" "-DVCPKG_TARGET_TRIPLET=x64-windows-static-md" "-Dstatic=ON" "-DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake" "-Dice=OFF "-DCMAKE_BUILD_TYPE=Release" ..
+cmake --build .
